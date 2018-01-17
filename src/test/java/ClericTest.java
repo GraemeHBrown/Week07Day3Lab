@@ -29,4 +29,10 @@ public class ClericTest {
         assertEquals(20, cleric1.getHealthPoints());
     }
 
+    @Test
+    public void canAddTreasure(){
+        cleric1.addTreasure("Diamonds",50);
+        assertEquals(50, cleric1.getAllTreasureValue());
+    }
+
 }
