@@ -18,4 +18,15 @@ public class ClericTest {
         assertEquals("Healer Harris", cleric1.getName());
     }
 
+    @Test
+    public void newPlayerHasZeroHealthPoints(){
+        assertEquals(0, cleric1.getHealthPoints());
+    }
+
+    @Test
+    public void canSetHealthPoints(){
+        cleric1.setHealthPoints(20);
+        assertEquals(20, cleric1.getHealthPoints());
+    }
+
 }
